@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //Question1--------
+        /*
+        var firstName = prompt('Enter your First Name');
+        var lastName = prompt('Enter your Last Name');
+        var fullName = firstName + " " + lastName;
+        alert(fullName + ' ! You are most welcome');
+        */
+
+
+
+
+
+         //Question2--------
+         /*
+        alert(prompt('Enter your favorite mobile phone model', "Nokia").length);
+        */
+
+
+
+
+
+
+        //Question3--------
+         /*
+
+         var index = "Pakistani";
+         var ind = index[3];
+         alert(ind);
+        */
+
+
+         
+
+
+
+
+
+
+         
+
+         var lastIndex = "Hello world".lastIndexOf("l");
+
+         alert(lastIndex);
+        
+
+
+
+
+          //Question5--------
+         /*
+
+         var index_finding = "Hello world".slice(2,3);
+
+         alert(index_finding);
+
+        */
+
+
+        //Question6--------
+        /*
+        var firstName = prompt('Enter your First Name');
+        var lastName = prompt('Enter your Last Name');
+        var fullName = firstName.concat(" " + lastName);
+        alert(fullName + ' ! You are most welcome');
+        
+        */
+
+
+
+
+        
+
+        //Question7--------
+        /*
+        var cityName = "Hyderabad";
+        var firstReplaceName = cityName.slice(0,length-4);
+        firstReplaceName = "Islam";
+        var lastReplaceName = cityName.slice(length-4);
+        var newCityName = firstReplaceName.concat(lastReplaceName);
+        alert(newCityName);
+        */
+
+
+        //OR
+
+        /*
+        var city = "Hyderabad".replace("Hyder", "Islam");
+        alert(city);
+        */
+
+
+
+
+
+
+
+        //Question8--------
+        /*
+
+        var message = 'Ali and Sami are best friends. They play cricket and football together.';
+        alert(message)
+        var newMessage = message.replace( /and/gi, "&") ;
+        alert(newMessage);
+
+        */
+
+
+
+       
+
+
+
+
+        //Question9--------
+        /*
+
+        var str = "472";
+        document.write('<h3>Before : </h3>' + str + ", Type: " + typeof str + "<br/><br/>");
+        var strToNum = +str;
+
+        document.write('<h3>After : </h3>' + strToNum + ", Type:  " + typeof strToNum + "<br/><br/>"); 
+        
+        */
+
+
+
+        //Question11--------
+        /*
+
+
+        var upperCase =  prompt("Enter a name ").toUpperCase();
+        alert("Your input in Upper Case is " + "'" + upperCase + "'");
+
+        */
+
+
+
+
+
+  
+        
+        //Question12--------
+        /*
+        var num =  30.05;
+        document.write(num + "<br/>");
+        
+        var newNum = num.toString();
+        displayNum = newNum.replace("." , "");
+        document.write(displayNum + "<br/>");
+        */
+
+
+
+
+     
+        //Question13--------
+        /*
+
+        var userName = prompt('Please enter a username w/o "@!,."');
+
+        var char1 = userName.indexOf('@');
+        var char2 = userName.indexOf('!');
+        var char3 = userName.indexOf(',');
+        var char4 = userName.indexOf('.');
+
+        if (char1 !== -1 || char2 !== -1 || char3 !== -1 || char4 !== -1){
+            alert('Please enter a valid Username');
+        }else{
+        	alert(userName + ' ! You are most welcome');
+        }*/
+
+
+
+
+
+
+         //Question14--------
+        /*
+      
+        var userInput = prompt('Bakers item').toLowerCase();
+        
+        var foundItem = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+        
+        for(var i = 0; i < foundItem.length; i++){
+        	var b = foundItem.indexOf(userInput);
+
+        	if(b !== -1){
+                
+            	alert('Item is found at index ' + b);
+            	break;
+            
+            }else{
+            	alert("We are sorry." + userInput + " is not available in our bakery");
+                break;
+            }
+        }
+        */
+
+
+
+
+        
+
+        
+
+
+
+
+         //Question10--------
+        /*
+
+        var chars =  prompt("Enter a name");
+        var firstChar = chars.slice(0,1).toUpperCase();
+        var remainingChars = chars.slice(1);
+        alert("Your input in Title Case is " + "'" + firstChar + remainingChars + "'");
+        
+*/
+/*
+        var userPassword = prompt('Please enter a password');
+        var passIntLength = userPassword.length;
+        var PassLength = 6;
+        var firstCharOfPass = userPassword[0].charCodeAt(0);
+        
+        for(var i = 1; i < passIntLength ; i++){
+        	document.write(userPassword[i] + '<br/>');
+        	var alpha_num_checker = userPassword[i].charCodeAt(0);
+            
+        if( alpha_num_checker < 48 || alpha_num_checker > 57 ||
+            alpha_num_checker < 65 || alpha_num_checker > 90 ||
+            alpha_num_checker < 97 || alpha_num_checker > 122){
+        	alert('Enter  a pass')
+        }else{
+        	alert('welcome');
+        }
+
+        }
+
+    /*   if(){
+        	alert('Enter  a pass')
+        }else{
+        	alert('welcome');
+        }*/
+
+ //alert(+'Z'.charCodeAt(0));
+
+
+
+// (firstCharOfPass >= 48 && firstCharOfPass <= 57) || passIntLength < PassLength 
+        
+        //Question--------
+         /*
+
+         var index_finding = "Hello world".slice(2,3);
+
+         alert(index_finding);
+
+
+
+         var firstNames = 'Muhammad';
+         var lastNames = ['Ali', 'Ahad', 'Khan'];
+
+         for ( i = 0; i++; i < firstNames.length){
+
+            var firstName = firstNames[i]
+
+            for (j = 0; j++ ; j < lastNames.length){
+
+                var lastName = lastNames[j]
+            }
+            var fullName = 
+         }
+
+         document.write(fullName);*/
+         
+
+
+
+
+
+        
+        
+
+    </script>
+</body>
+</html>

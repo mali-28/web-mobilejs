@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>layout</title>
+        <script>
+            alert('INSIDE HEAD');
+        </script>
+	<style>
+		body{
+			width:1345px;
+			 background-color: #333;
+			border: 5px solid #000;
+			margin: 2px auto;
+			box-sizing: border-box;
+		}
+		.wrapper{
+			width: 1300px;
+			
+			margin:10px auto;
+			background-color: #939090;
+			border: 2px solid #000; 
+			box-sizing: border-box;
+
+
+
+		}
+		.header{
+			background-color:#201212;
+			height: 40px;
+			width: 65%;
+			padding-left: 50px;
+			line-height: 40px;
+			box-sizing: border-box;
+			font-weight: bold;
+			font-size: x-large;
+			color: #fff;
+			float: left;
+
+		}
+		.nav{
+
+			width: 35%;
+			height: 40px;
+			background-color: #201212;
+			float: right;
+
+		}
+		.nav li {
+			display: inline;
+			padding-right: 10px;
+			
+
+
+		}
+		.nav li a{
+
+			color:#c4b2d2;
+			text-decoration: none;
+
+            
+		}
+		#clear{
+			clear: both;
+		}
+		.main{
+		   width: 100%;
+		   
+		   background-color: #939090;
+		}
+		.main>div{
+			margin:30px 30px;
+			
+		}
+		.slider1{
+		   height: 200px;
+		   width: 50%;
+		   background-color:#201212; 
+		   float: left;
+        }
+        .slider1>h1{
+        	color: #c4b2d2;
+        	text-align: center;
+        	line-height: 150px;
+        }
+
+        .slider2{
+        	
+        	width: 35%;
+        	color: #170401;
+        	text-align: center; 
+        	float: right;
+
+        }
+        .slider2>button{
+        	background-color: #0b0663;
+        	color: #fff;
+        	padding: 10px;
+
+        	
+        }
+        #clear1{
+			clear: both;
+		}
+        
+        .slider3{
+        	padding-right:70px;
+        	width: 90%;
+        	height: 40px;
+        	background-color:#201212; 
+        }
+        .slider3>p{
+        	color: #fff;
+        	text-align: center;
+        	line-height: 40px;
+        }
+
+        .card1{
+        	width: 27%;
+        	/*border: 2px solid #333;*/
+        	
+        	float: left;
+        }
+
+        .cd1a{
+        	width: 100%;
+            color: #fff;
+            background-color: #0e0103;
+            border: 2px solid #333;
+            padding: 10px;
+            box-sizing: border-box;
+
+        }
+        .cblb{
+        	width: 100%;
+        	
+        	 padding: 10px;
+        	 box-sizing: border-box;
+
+        }
+        .cd1b{
+        	background-color: #250709;
+        	 border: 2px solid #333;
+
+        }
+        .cd1b>button{
+        	
+        	color: #fff;
+        	background-color: #0b0663;
+        	padding: 10px;
+
+
+        }
+       
+
+        .card2{
+        	width: 28%;
+        	
+        	border: 2px solid #333;
+        	box-sizing: border-box;
+        	
+        	float: left;
+        }
+
+         .cd2a{
+        	width: 100%;
+            color: #fff;
+            background-color: #0e0103;
+            border: 2px solid #333;
+            padding: 10px;
+            box-sizing: border-box;
+
+        }
+        .cb2b{
+        	width: 100%;
+        	background-color: #1b1617;
+        	 border: 2px solid #333;
+        	 padding: 10px;
+        	 box-sizing: border-box;
+
+        }
+
+        .cd2b{
+        	background-color: #250709;
+        	 border: 2px solid #333;
+
+        }
+        .cd2b>button{
+        	
+        	color: #fff;
+        	background-color: #0b0663;
+        	padding: 10px;
+
+
+        }
+        
+        	
+        .card3{
+        	width: 27%;
+        	
+        	border: 2px solid #333;
+        	
+        	float: left;
+        }
+
+        .cd3a{
+        	width: 100%;
+            color: #fff;
+            background-color: #0e0103;
+            border: 2px solid #333;
+            padding: 10px;
+            box-sizing: border-box;
+
+        }
+        .cb3b{
+        	width: 100%;
+        	background-color: #392f32;
+        	 border: 2px solid #fff;
+        	 padding: 10px;
+        	 box-sizing: border-box;
+
+        }
+
+        .cd3b{
+        	background-color: #250709;
+        	 border: 2px solid #333;
+
+        }
+        .cd3b>button{
+        	
+        	color: #fff;
+        	background-color: #0b0663;
+        	padding: 10px;
+
+
+        }
+       
+         #clear2{
+			clear: both;
+		}
+        
+		.footer{
+			background-color: #201212;
+			height: 20px;
+			width: 1230px;
+			color: #fff;
+			text-align: center;
+			line-height: 20px;
+
+
+		}
+
+        
+		
+</style>
+</head>
+<body>
+    <script>
+        alert('BEFORE HTML PAGE');
+    </script>
+
+	<div class="wrapper">
+		<div class="header">COMPANY NAME</div>
+		<div class="nav">
+			<ul>
+				<li><a href="home">HOME</a></li>
+				<li><a href="about">ABOUT</a></li>
+				<li><a href="services">SERVICES</a></li>
+				<li><a href="contact">CONTACT</a></li>
+			</ul>
+		</div>
+		
+		<div id="clear"></div>
+		<div class="main">
+			
+				<div class="slider1"><h1>WIDTH:50%</h1></div>
+				<div class="slider2">
+					<h2>BUSSINESS NAME OR TAGLINE</h2>
+					<p>This is a template that is great for small businesses.It doesn't have too much fancy flare to it,but it make a great use of standard footstrap core components.Feel free to use this template for any project you want|</p>
+                   <button>Call to action</button>
+				</div>
+
+		<div id="clear1"></div>	
+        
+
+        <script>
+           alert('INSIDE HTML PAGE');
+        </script>
+
+
+		<div class="slider3">
+			<p>This call to action card is a great place to showcase some important information or display a clever tagline|</p>
+		</div>
+
+		<div class="card1">
+
+			<div class="cd1a"><h1>CARD 1</h1>
+			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+
+			<div class="cd1b"><button>More info</button></div>
+		</div>
+		
+
+		<div class="card2">
+			<div class="cd2a"><h1>CARD 2</h1>
+			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+
+		<div class="cd2b"><button>More info</button></div>
+		</div>
+
+		
+			
+
+		<div class="card3">
+			<div class="cd3a"><h1>CARD 3</h1>
+			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+
+		<div class="cd3b"><button>More info</button></div>
+		</div>
+
+			<div id="clear2"></div>	
+
+		<div class="footer">Copyright @ Ali Website 2021</div>
+		</div>
+			
+	</div>
+
+        <script>
+            alert('AFTER HTML PAGE');
+        </script>
+	</body>
+</html>

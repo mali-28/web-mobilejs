@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .displayBlock {
+        display: block;
+      }
+      .displayNone {
+        display: none;
+      }
+    </style>
+    
+</head>
+<body>
+       <div id="div1" class="box">
+
+        <h1>Sign Up</h1>
+
+                <input type="text" id="fname" name="fname" placeholder="First Name"><br><br>
+
+                <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+
+                <input type="text" name="" id="email" placeholder="E-mail" ><br><br>
+
+                <input type="radio" name="gender" id="" value="Male">Male<br>
+                <input type="radio" name="gender" id="" value="Female">Female<br><br>
+
+                <input type="password" id="tpassword" placeholder="Type Password"><br><br>
+
+                <input type="password" id="rtpassword" placeholder="Re-type Password"><br>
+
+                <div class="submit">
+                    <input type="button" value="Submit" onclick="signUp()">
+               </div>
+        </div>
+
+        <div id="demo">
+            <div>
+                <button  onclick="display()">Your Information</button>
+
+                <table border="1px"  id="myTable">
+                  <thead>
+                    <tr>
+                      <td>First Name</td>
+                        <td>Last Name</td>
+                        <td>Email</td>
+                        <td>Password</td>
+                    </tr>
+                  </thead>
+                  <tbody id="data-body">
+
+                  </tbody>
+
+                  </table>
+            
+        </div>
+
+        
+
+    <script src="tahir.js"></script>
+    
+</body>
+</html>
+
+

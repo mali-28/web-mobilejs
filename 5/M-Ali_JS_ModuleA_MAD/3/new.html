@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+    <div id="div1" class="box">
+        <h1>Sign Up</h1>
+        <form onsubmit="myFunc()" action="javascript: void(0)" method="post">
+            <input type="text" name="" id="fname" placeholder="firstname" value="asdf"><br>
+            <input type="test" name="" id="lname" placeholder="lastname" value="sadfsad"><br>
+            <input type="text" name="" id="email" placeholder="email" value="abc@gmail.com"><br>
+            <input type="radio" name="gender" id="" value="Male">Male<br>
+            <input type="radio" name="gender" id="" value="Female">Female<br><br>
+
+            <input type="password" id="tpass" placeholder="Type Password" value="......."><br><br>
+
+            <input type="password" id="rtpass" placeholder="Re-type Password" value="......"><br>
+
+            <div class="submit">
+                <input type="submit" value="Submit" id='submit'>
+           </div>
+
+        </form>
+
+    </div>
+
+    <div id="demo" class="none">
+        <button onclick="click()" value="your info.">your info.</button>
+        <table id="tableData" border="1px">
+            <thead>
+                <td>firstName</td>
+                <td>lastName</td>
+                <td>email</td>
+                <td>password</td>
+            </thead>
+            <tbody id="data">
+
+            </tbody>
+    </div>
+    
+</table>
+
+<button onclick="display()">Result</button>
+<table border="2px">
+    <thead>
+        <td>firstName</td>
+        <td>lastName</td>
+        <td>email</td>
+        <td>password</td>
+    </thead>
+    <tbody id="result">
+
+    </tbody>
+    
+</table>
+
+
+
+    <script>
+        var firstName1 = [];
+        var lastName1 = [];
+        var mail1 = [];
+        var password1 = [];
+        var editedIndex;
+        function myFunc(){
+            let firstName = document.getElementById('fname').value;
+        let lastName = document.getElementById('lname').value;
+        let mail = document.getElementById('email').value;
+        let password = document.getElementById('tpass').value;
+
+            firstName1.push(firstName);
+            lastName1.push(lastName);
+            mail1.push(mail);
+            password1.push(password);
+            click();
+            
+        }
+
+
+        function click(){
+            let dataDisplay = "";
+                for(let i=0; i < firstName1.length; i++){
+                    if(editedIndex === i){
+                    dataDisplay += "<tr>"+
+                    "<td>" +  firstName1[i]  + "</td>"+
+                    "<td>" +  lastName1[i] + "</td>"+
+                    "<td><input id='updateMail' type='type' value='"+ mail1[i] +"'></td>" +
+                    "<td><input id= 'updatePassword' type='text' value='"+ password1[i] +"' ></td>" +
+                    "<td id='upd_btn'><button id = 'update' onclick='myUpdate("+ i + ")'>Update</button></td>"
+                }else{
+
+                        dataDisplay += "<tr>"+
+                    "<td>" +  firstName1[i]  + "</td>"+
+                    "<td>" +  lastName1[i] + "</td>"+
+                    "<td class='editEmail'>" + mail1[i]+ "</td>" +
+                    "<td class= 'editPassword'>" + password1[i] + "</td>" +
+                    "<td id='btn'><button id = 'edit' onclick='myedit("+ i + ")'>edit</button><button id = 'delete' onclick='mydlt("+ i + ")'>delete</button></td>"
+                    "</tr>"
+                    
+                    }
+              
+                }
+                document.getElementById('demo').style.display = 'block';
+                document.getElementById('data').innerHTML = dataDisplay;
+                
+            }
+           
+        
+
+        function myedit(i){
+            editedIndex = i;
+            click();
+        }
+
+        function mydlt(i){
+            firstName1.splice(i,1);
+            lastName1.splice(i,1);
+            mail1.splice(i,1);
+            password1.splice(i,1);
+            click();
+        
+        }
+
+        function myUpdate(i){
+            editedIndex = -1;
+           
+            var editemail = document.getElementById('updateMail').value;
+            var editpassword = document.getElementById('updatePassword').value;
+            mail1[i] = editemail;
+            password1[i] = editpassword;
+            click();
+        }
+
+
+        function display(){
+
+            var dataDisplay = ""
+            for(var i = 0; i < firstName1.length; i++){
+                dataDisplay += "<tr>"+
+                    "<td>" +  firstName1[i]  + "</td>"+
+                    "<td>" +  lastName1[i] + "</td>"+
+                    "<td class='editEmail'>" + mail1[i]+ "</td>" +
+                    "<td class= 'editPassword'>" + password1[i] + "</td>" +
+                    "</tr>"
+           }
+           document.getElementById('result').innerHTML = dataDisplay;
+            
+
+        }
+      
+    </script>
+    
+</body>
+</html>

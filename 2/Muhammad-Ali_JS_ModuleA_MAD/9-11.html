@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+	<script>
+		
+		//Question1--------
+		
+		var cityName = prompt('Writa a city Name');
+		var first_Char_City = cityName.slice(0,1).toUpperCase();
+		var remaining_Char_City = cityName.slice(1).toLowerCase();
+		var newCityName = first_Char_City + remaining_Char_City;
+
+		
+		if(newCityName === "Karachi"){
+			alert("Welcome to City of Lights")
+		}else{
+			alert('Welcome to ' + newCityName);
+		}
+     
+
+
+
+
+        //Question2--------
+		/*
+		var gender = prompt('Write your gender').toLowerCase();
+
+		if (gender === "male"){
+			alert("Good Morning Sir");
+		}else
+		 if (gender === "female"){
+
+            alert("Good Morning Sir");
+		}else{
+			alert("Enter Your Gender Correctly");
+		}
+        */
+
+
+
+
+
+        //Question3--------
+		/*
+
+        var signalMessage = prompt('Write Signal Colour').toLowerCase();
+
+		if (signalMessage === "red"){
+			alert("Must Stop");
+		}else
+		 if (signalMessage === "yellow"){
+
+            alert("Ready To Move");
+		}else
+		 if (signalMessage === "green"){
+
+            alert("Move Now");
+        }else{
+			alert("Enter Signal Colour Correctly");
+		}*/
+
+
+
+
+
+
+		//Question4--------
+		/*
+
+        var fuelAlert = +prompt('Write Fuel Quantity In Litres.');
+		
+		if(fuelAlert < 0.25){
+			alert("Please refill the fuel in your car");
+		}else if(fuelAlert >=0.25){
+			alert('GOOD LUCK');
+		}else{
+            alert('Please enter a valid number ');
+        }*/
+
+
+
+        
+
+        //Question5--------
+		/*
+
+		var a = 4;
+		if (++a === 5){ 
+		    alert("given condition for variable a is true");
+		}
+
+		var b = 82; 
+		if (b++ === 83){ 
+			alert("given condition for variable b is true"); 
+		}else{
+			alert("given condition for variable b is false"); 
+		}
+ 
+
+        var c = 12; 
+        if (c++ == 13){ 
+        	alert("condition 1 is true"); 
+        } if (c === 13){
+            alert("condition 2 is true"); 
+        } if (++c < 14){ 
+        	alert("condition 3 is true"); 
+        } if(c === 14){ 
+        	alert("condition 4 is true"); 
+        } 
+
+
+        var materialCost = 20000; 
+        var laborCost = 2000; 
+        var totalCost = materialCost + laborCost; 
+        if (totalCost == laborCost + materialCost){ 
+        	alert("The cost equals"); 
+        } 
+
+        if (true){ 
+         	alert("True"); 
+        } if (false){ 
+         	alert("False"); 
+        } 
+
+
+        if("car" < "cat"){ 
+        	alert("car is smaller than cat"); 
+        } */
+
+
+
+
+
+
+        //Question6--------
+		/*
+
+        var obtainedPercentage = +prompt('what is your percentage?', "e.g. 70 or 80");
+
+        document.write('<h1>MARKSHEET</h1> <br/><br/>');
+
+        var totalMarks = 550;
+        document.write('<b>Total Marks</b>: ' + totalMarks + "<br/>");
+
+        document.write('<b>Marks Obtained</b>: ' + (totalMarks*obtainedPercentage/100) + "<br/>");
+
+        document.write('<b>Percentage</b>: ' + obtainedPercentage + " % <br/>");
+
+        if (obtainedPercentage >= 80 && obtainedPercentage <= 100){
+        	 document.write('<b>Remarks : <b/> Excellent <br/><br/>');
+        }else
+
+        if (obtainedPercentage >= 70 && obtainedPercentage < 80){
+        	document.write('<b>Remarks : <b/> Good <br/><br/>');
+        }else
+
+        if (obtainedPercentage >= 60 && obtainedPercentage < 70){
+        	document.write('<b>Remarks : <b/> You need to improve <br/><br/>');
+        }else
+
+        if(obtainedPercentage < 60){
+        	document.write('<b>Remarks : <b/> Better luck next time <br/><br/> ');
+        }else{
+        	document.write('<b>Remarks : <b/> Please enter a valid percentage <br/><br/>');
+        }*/
+
+
+
+
+
+        //Question7--------
+		/*
+
+        var num = 2;
+        var guessNum = +prompt('Guess a number having range  1-10');
+
+        if(guessNum === num){
+
+        	alert('Bingo! Correct answer');
+
+        }else if(guessNum === ++num){
+           
+           alert('Close enough to the correct answer');
+            
+        }else{
+        	alert('Try Again');
+        }*/
+
+
+
+
+
+
+
+        //Question8--------
+		/*
+
+
+        var numDivOf3 = +prompt('Write a number ');
+
+        if(numDivOf3%3 == 0 && numDivOf3 !== 0){
+        	alert(numDivOf3 + 'is divisile by 3');
+        }else{
+        	alert('Your number is not divisible by 3');
+        }*/
+
+
+
+
+
+
+        //Question9--------
+		/*
+
+
+        var evenOddChecker = +prompt('Write an even or odd number');
+        if(evenOddChecker%2 == 0){
+ 
+            alert('Your number is an even number');
+
+        }else if(evenOddChecker%2 == 1){
+
+            alert('Your number is an odd number');
+
+        }else{
+
+            alert('Enter a correct whole number');
+        }*/
+
+
+
+
+
+
+
+        //Question10--------
+		/*
+
+        document.write('<h1>Temperature Guider</h1>');
+        var temperature = +prompt('Write any temperature in Celcius scale');
+
+        
+        if (temperature > 40){
+        	 document.write('It is too hot outside<br/><br/>');
+        }else
+
+        if (temperature > 30 && temperature <= 40){
+        	document.write('The Weather today is Normal<br/><br/>');
+        }else
+
+        if (temperature > 20 && temperature <= 30){
+        	document.write('Today’s Weather is cool<br/><br/>');
+        }else
+
+        if(temperature > 10 && temperature <= 20){
+        	document.write('OMG! Today’s weather is so Cool <br/><br/> ');
+        }else{
+        	document.write('You are live at ANTARTICA<br/><br/>');
+        }*/
+
+
+
+
+
+
+        //Question11--------
+		/*
+                 
+        document.write('<h1>CALCULATOR</h1>');
+        var firstNum = +prompt('Write First Number');
+        var SecondNum = +prompt('Write Second Number');
+        var operator = prompt('Write any operator', "e.g. +,-,/,* or %");
+
+
+        if (operator === "+"){
+        	 document.write('<b>The addition of two number is : <b/>' + (firstNum + SecondNum) + '<br/><br/>');
+        }else
+
+        if (operator === "-"){
+        	 document.write('<b>The subtraction of two number is : <b/>' + (firstNum - SecondNum) + '<br/><br/>');
+        }else
+
+        if (operator === "*"){
+        	 document.write('<b>The multipication of two number is : <b/>' + (firstNum*SecondNum) + '<br/><br/>');        
+        }else
+
+        if (operator === "/"){
+        	 document.write('<b>The division of two number is : <b/>' + (firstNum / SecondNum) + '<br/><br/>');
+        }else 
+
+        if (operator === "%"){
+        	 document.write('<b>The modulus of two number is : <b/>' + (firstNum % SecondNum) + '<br/><br/>');
+        }
+
+        else{
+        	document.write('Enter a valid operator 0r first number or second number <br/><br/>');
+        }*/
+        
+  
+	</script>
+	
+</body>
+</html>

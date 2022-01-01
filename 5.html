@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .displayBlock {
+        display: block;
+      }
+      .displayNone {
+        display: none;
+      }
+    </style>
+    
+</head>
+<body>
+       
+        <div id="demo" >
+
+                <table border="1px" id="myTable">
+                  <form action="javascript:void(0)"  method="post">
+                    <tr>
+                      <td>Identity</td>
+                      <td>Class</td>
+                      <td>Year</td>
+                      <td>Function</td>
+
+                    </tr>
+                    <tr id="1">
+                        <td >0001</td>
+                        <td id= "display1">one</td> 
+                        <td>2020</td>   
+                        <td><button type="button" onclick=" edit(true)">Edit</button>
+                        <button type="button" onclick=" rmv()">Delete</button></td> 
+                    
+                    <tr>
+                      <td>0005</td>
+                      <td>fifth</td> 
+                      <td>2018</td> 
+                      <td><button class="edit" type="button">Edit</button>
+                        <button type="button">Delete</button></td> 
+                    </tr>
+
+                    <tr>
+                      <td style="text-align: right;" colspan="4"><input type="submit" value="Submit" ></td>
+                    </tr>
+                    </form>
+                  </table>
+            
+        </div>
+
+        
+
+    <script src="5.js"></script>
+    
+</body>
+</html>
+
+

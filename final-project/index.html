@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/favicon.ico" >
+    <title>Booster8228</title>
+</head>
+<body>
+    <section id="preloader">
+        <div id="div-loader">
+                <div class='div1 spin-acw'>
+                    
+                </div>
+                <div class="div2 spin-cw">
+                    <div class="div3 spin-acw">
+                        <div class="div4 spin-acw">
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+            </section>
+            
+    <section id="body" class="none">
+
+        <div id="before">
+            <header id="header">
+                <div class="container">
+                    <div id="header-div">
+                
+                        <div>
+                            <img src="./images/logo-d.jfif" alt="logo-1">
+                        </div>
+    
+                        <nav id="nav-bar">
+                            <ul>
+                                <li><a href="javascript: void(0)" onclick="login_btn()">Login</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div><!--close-class-container-->
+                
+            </header>
+            
+            <section class="box">
+                <div class="container">
+                    <div id="login" class="center">
+                        <form onsubmit="return login()"  id="form" action="javascript:void(0)" method="post">
+                            <h1>LOGIN</h1>
+                        <input type="text" name="email" id="email" placeholder="*Email*"><br/>
+                        <input type="text" name="password" id="password" placeholder="*Password*"><br/>
+                        <button  type="submit" id='submit'>login</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+               
+        </div><!--close-before-->
+
+
+
+
+    <div id="after" class="none" >  
+        <header id="header">
+            <div class="container">
+                <div id="header-div">
+            
+                    <div>
+                        <img src="./images/logo-d.jfif" alt="logo-1">
+                    </div>
+
+                    <nav id="nav-bar">
+                        <ul>
+                            <li id="yourMail"></li>
+                            <li><a href="index.html" onclick="logout()">logout</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div><!--close-class-container-->
+            
+       </header>
+        
+        <section class="box">
+            <div class="container">
+                <div id="info" class="center">
+                    <form onsubmit="return input()"  id="form" action="javascript:void(0)" method="post">
+                        <h1>INFORMATION</h1>
+                        <br/><hr>
+                    <input type="text" name="title" id="title"  placeholder="*Title*"><br/>
+                    
+                    <textarea maxlength="500" id="description" cols="22" rows="6" placeholder="*Descrition*"></textarea><br/>
+                    <button  type="submit" id='submit'>Submit</button>
+                    </form>
+                </div>
+
+
+                <div id="info-display" class="none">
+                            <h1 class="center">INFORMATION</h1>
+                        <br/><hr><br/>
+                        <p><span class="brown br-l">Title </span><span id="info-title" class="pl-5"> </span><p></p>
+                        <p><span class="brown br-l">Description </span><span id="info-description" class="pl-5"> </span></p>
+                </div>
+            </div>
+        </section>
+       
+           
+    </div><!-- close-after -->
+
+        
+
+
+    </section><!--close-id-body-->
+
+
+
+    <script src="./index.js"></script>
+    
+</body>
+</html>

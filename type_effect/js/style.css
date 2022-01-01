@@ -1,0 +1,34 @@
+body{
+    font-family: sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: black;
+}
+.intro{
+    display:flex;
+    color:white;
+    height:100vh;
+}
+.typing{
+    margin-left: 10px;
+    position: relative;
+}
+.typing::after{
+    content: "";
+    position: absolute;
+    right:-5px;
+    width:1px;
+    height:5%;
+    border-right: 2px solid white;
+    animation:0.5s blink infinite ease;
+}
+@keyframes blink{
+    0%{
+    opacity: 0;
+    }
+
+100%{
+    opacity: 1;
+}
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+        <div class="box">
+
+            <table>
+                <tt><h1>ITEMS</h1></tt>
+                <tr>
+                    <td>1</td>
+                    <td>APPLE</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>BANANA</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>MANGO</td>
+                </tr>
+                
+                <tr>
+                    <td>4</td>
+                    <td>ORANGE</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>GRAPH</td>
+                </tr>
+                
+                <tr>
+                    <td>6</td>
+                    <td>PEACH</td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>WATER MELON</td>
+                </tr>
+
+                <tr>
+                    <td>8</td>
+                    <td>STRAWBERY</td>
+                </tr>
+            </table>
+
+            
+        </div>
+
+        <script>
+            var parentDiv = document.getElementById("div1");
+ var newParagraph = document.createElement("div");
+ newParagraph.setAttribute('id', "div2")
+ newParagraph.setAttribute('onclick', "signUp()")
+ newParagraph.innerHTML = "<table><tr><td>abc</td><td>def</td></tr><tr><td>abc</td><td>def</td></tr></table>";
+ parentDiv.append(newParagraph);
+console.log(newParagraph);
+function {
+   document.getElementById('div2').style.display = "block";
+}
+        </script>
+
+    
+</body>
+</html>

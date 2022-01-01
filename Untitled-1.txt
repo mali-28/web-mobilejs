@@ -1,0 +1,11 @@
+const email = "abc@example.com"
+const arr = email.split("@");
+
+if(arr[1]){
+
+const dotIndex = arr[1].indexOf('.')
+if(dotIndex < 0){
+//show alert
+}
+}
+
